@@ -26,7 +26,8 @@ audio_dir = args.audio_dir
 output_dir = args.output_dir
 audio_dir_len = len(audio_dir)
 
-# filter naming warnings from PyTables
+# filter redundant naming convention warnings from PyTables since we don't use it
+# https://stackoverflow.com/questions/58414068/how-to-get-rid-of-naturalnamewarning
 warnings.filterwarnings('ignore', category=NaturalNameWarning)
 
 # Check if audio directory exists
