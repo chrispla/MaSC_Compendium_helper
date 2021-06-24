@@ -50,7 +50,7 @@ files_of(audio_dir)
 print("Found", len(audio_paths), "audio files.")
 
 # Dictionary for audio features
-# key : NYUAD Archives Reference
+# key : Path relative to parent audio directory
 # value : {'mfcc' : np.array, 'chromagram' : np.array, 'tempogram' : np.array}
 features = {}
 
